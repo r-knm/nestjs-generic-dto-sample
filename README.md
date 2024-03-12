@@ -1,73 +1,28 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# r-knm/nestjs-generic-dto-sample
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+下記の技術記事に関連するコードをアップしたリポジトリです。
+[NestJSでのGenericDTO定義とOpenAPIドキュメントでの出力を実装する](https://zenn.dev/r_knm/articles/7c1c7881618025)
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## 起動方法
 
-## Description
+- Node: v20.11.1
+  - (Pinned to Package.json by Volta.)
+- NestJS: v10
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## 動作確認
 
-## Installation
+今回のサンプルでは、「正常レスポンス」と「エラーレスポンス」の２種類のAPIを用意しています。
+それぞれ参考用に Postman でのリクエスト画面を添付いたします。
+また、SwaggerUIでの共通レスポンス表示についてもスクリーンショットを添付します。
 
-```bash
-$ npm install
-```
+- 正常レスポンス
 
-## Running the app
+![スクリーンショット 2024-03-12 20 14 47](https://github.com/r-knm/nestjs-generic-dto-sample/assets/102338067/4e646d97-5bf2-4844-a9a9-b719e70a8ae9)
 
-```bash
-# development
-$ npm run start
+- エラーレスポンス
 
-# watch mode
-$ npm run start:dev
+![スクリーンショット 2024-03-12 20 15 13](https://github.com/r-knm/nestjs-generic-dto-sample/assets/102338067/2ce46e18-9062-4e67-9ad0-c4ffbb4c7f09)
 
-# production mode
-$ npm run start:prod
-```
+- SwaggerUIでの共通レスポンス表示
 
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+![スクリーンショット 2024-03-12 20 16 03](https://github.com/r-knm/nestjs-generic-dto-sample/assets/102338067/2401ab80-2efb-44fe-8459-2ffe6654d145)
