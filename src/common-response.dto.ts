@@ -20,7 +20,6 @@ export class CommonResponseDto<TData> {
 
   @ApiProperty({
     description: 'データ',
-    required: false,
   })
   @IsNotEmpty()
   data: TData | TData[];
@@ -28,7 +27,6 @@ export class CommonResponseDto<TData> {
   @ApiProperty({
     description: 'エラー内容',
     example: [],
-    required: false,
   })
   @IsArray()
   @IsNotEmpty()
