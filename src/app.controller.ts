@@ -18,4 +18,13 @@ export class AppController {
   getHello(): CommonResponseDto<GetHelloResponse> {
     return this.appService.getHello();
   }
+
+  @Get('error')
+  @ApiOperation({
+    summary: '(強制エラー)',
+    description: '強制的にエラーを出力する。',
+  })
+  getError(): void {
+    return this.appService.getError();
+  }
 }

@@ -5,9 +5,6 @@ import { GetHelloResponse } from './get-hello.dto';
 @Injectable()
 export class AppService {
   getHello(): CommonResponseDto<GetHelloResponse> {
-    // WARN: Force to throw internal server error.
-    throw new InternalServerErrorException('Internal Server Error');
-
     return {
       success: true,
       date: new Date(),
@@ -16,5 +13,10 @@ export class AppService {
       },
       error: null,
     };
+  }
+
+  getError(): void {
+    // WARN: Force to throw internal server error.
+    throw new InternalServerErrorException('Internal Server Error');
   }
 }
