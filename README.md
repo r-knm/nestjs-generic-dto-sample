@@ -9,6 +9,11 @@
   - (Pinned to Package.json by Volta.)
 - NestJS: v10
 
+下記のコマンドを実施してください。
+
+1. `npm install`
+2. `npm run start:dev`
+
 ## 動作確認
 
 今回のサンプルでは、「正常レスポンス」と「エラーレスポンス」の２種類のAPIを用意しています。
