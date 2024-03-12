@@ -1,11 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-import {
-  IsArray,
-  IsBoolean,
-  IsDate,
-  IsNotEmpty,
-  IsString,
-} from 'class-validator';
+import { IsArray, IsBoolean, IsDate, IsNotEmpty } from 'class-validator';
 
 export class CommonResponseDto<TData> {
   @ApiProperty({
@@ -15,14 +9,6 @@ export class CommonResponseDto<TData> {
   @IsBoolean()
   @IsNotEmpty()
   success: boolean;
-
-  @ApiProperty({
-    description: 'APIエンドポイント名',
-    example: true,
-  })
-  @IsString()
-  @IsNotEmpty()
-  instance: string;
 
   @ApiProperty({
     description: 'レスポンス送信日時',
